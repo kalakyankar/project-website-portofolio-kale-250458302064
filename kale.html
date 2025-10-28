@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="shortcut icon" href="https://i.pinimg.com/736x/83/de/ba/83deba341709d28c0129f79563c6e3b1.jpg" type="image/x-icon">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+ <style>
+    .font-gaegu {
+        font-family: "Gaegu";
+    }
+ </style>
+<body>
+    <nav class="sticky top-0 z-50 bg-[#948979]/90 backdrop-blur border-b border-b-[#393E46]" aria-label="Primary">
+      <div class="max-w-7xl mx-auto p">
+         <div class="flex items-center justify-between h-16">
+           <a href="#" class="flex items-center text-[#393E46] text-xl font-gaegu uppercase tracking-wider font-bold">kalezi</a>
+           <button
+            id="hamburger"
+            class="md:hidden p-2 rounded text-[#393E46] focus:outline-none focus:ring-2 focus:ring-[#222831]"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle menu">
+            <svg
+              id="icon-open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+           <div id="main-menu" class="hidden md:flex md:items-center md:gap-2">
+            <div class="flex flex-col md:flex-row md:items-center md:gap-2  text-right md:text-left">
+                <a href="#aboutMe" class="px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu font-bold">About Us</a>
+                <a href="#whatIDo" class="px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu font-bold">What We Do</a>
+                <a href="#portfolio" class="px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu font-bold">Portfolio</a>
+                <a href="#skills" class="px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu font-bold">Skills</a>
+                <a href="#testi" class="px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu font-bold">Testimonials</a>
+                <a href="#contact" class="hover:bg-[#393E46] bg-[#222831] rounded-xl px-4 py-2 font-bold font-gaegu text-[#DFD0B8] justify-center items-center">Contact Us</a>
+
+            </div>
+
+          </div>
+          <div id="mobile-panel" class="md:hidden hidden border-t border-amber-500">
+            <a href="#" class="block px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu">About Us</a>
+            <a href="#" class="block px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu">What We Do</a>
+            <a href="portfolio" class="block px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu">Portfolio</a>
+            <a href="#" class="block px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu">Skill</a>
+            <a href="#" class="block px-3 py-2 text-[#393E46] hover:text-[#222831] uppercase font-gaegu">Blog</a>
+            <a href="#" class="hover:bg-amber-200 bg-amber-600 rounded-xl px-4 py-2 font-bold font-gaegu text-[#DFD0B8] justify-center items-center">Contact Us</a>
+
+          </div>
+         </div>
+      </div>
+    </nav>
+
+    <section id="aboutMe" class="">
+      <div class="w-full mx-auto px-6 sm:px-6 lg:px-y py-16 grid md:grid-cols-2 gap-10 items-center bg-[#393E46]">
+  
+      <div class="order-2 border-[12px] sm:border[px] border-[#DFD0B8] rounded-2xl shadow-2xl overflow-hidden">
+        <img src="https://i.pinimg.com/1200x/d9/b9/3a/d9b93a5412bf84956bb5ef04cd3d8c9d.jpg" class="w-full h-full object-cover" alt="">
+      </div>
+
+      <div class="order-1 lg:order-1">
+        <h1 class="font-gaegu text-3xl font-bold leading-tight text-[#DFD0B8]">Hello, We Are <span class="text-[#948979]">KaleZi</span></h1>
+        <h4 class="font-gaegu text-xl font-semibold text-[#DFD0B8]">Architectural Designer</h4>
+        <p class="mt-5 leading-relaxed font-gaegu text-[#DFD0B8]">Designing, planning, and overseeing the construction of buildings and structures. Combine creative design with technical knowledge to ensure functional, safe, and aesthetically pleasing spaces that meet client needs, regulatory requirements, and sustainability standards.</p>
+      
+        <div class="mt-6 flex flex-wrap items-center gap-4 ">
+          <a href="" class="inline-flex items-center justify-center rounded-2xl bg-[#DFD0B8] hover:bg-[#393E46] text-[#222831] px-4 py-3"><i class="fa-brands fa-discord"></i></a>
+          <a href="" class="inline-flex items-center justify-center rounded-2xl bg-[#DFD0B8] hover:bg-[#393E46] text-[#222831] px-4 py-3"><i class="fa-brands fa-twitch"></i></a>
+          <a href="" class="inline-flex items-center justify-center rounded-2xl bg-[#DFD0B8] hover:bg-[#393E46] text-[#222831] px-4 py-3"><i class="fa-brands fa-youtube"></i></a>
+          <a href="" class="inline-flex items-center justify-center rounded-2xl bg-[#DFD0B8] hover:bg-[#393E46] text-[#222831] px-4 py-3"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="whatIDo" class="bg-[#222831]">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#948979]">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold font-gaegu text-[#948979] underline underline-offset-8 decoration-[#393E46] decoration-4 uppercase tracking-widest">What We Do</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-[#948979]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#222831] text-[#948979] place-items-center">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3 class="text-[#948979S] font-gaegu font-bold text-lg tracking-wider">Design</h3>
+            </div>
+            <p class="text-[#948979S] font-gaegu ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste animi repellat perferendis minus ut beatae cum similique harum, facilis maiores.</p>
+          </div>
+          <div class="rounded-xl bg-[#948979]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#222831] text-[#948979] place-items-center">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3 class="text-[#948979S] font-gaegu font-bold text-lg tracking-wider">Analyst</h3>
+            </div>
+            <p class="text-[#948979S] font-gaegu ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste animi repellat perferendis minus ut beatae cum similique harum, facilis maiores.</p>
+          </div>
+          <div class="rounded-xl bg-[#948979]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#222831] text-[#948979] place-items-center">
+                <i class="fa-solid fa-book-atlas"></i>
+              </div>
+              <h3 class="text-[#948979S] font-gaegu font-bold text-lg tracking-wider">Buildings</h3>
+            </div>
+            <p class="text-[#948979S] font-gaegu ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste animi repellat perferendis minus ut beatae cum similique harum, facilis maiores.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+     <section id="portfolio" class="bg-[#948979]">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#948979]">
+           <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold font-gaegu text-[#393E46] underline underline-offset-8 decoration-[#393E46] decoration-4 uppercase tracking-widest">PortFolio</h2>
+        </div>
+         <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-[#393E46]/70 shadow-2xl p-6 justify-center">
+            <div class="flex items-center gap-3 mb-3 justify-center items-center">
+                <a href="https://youtu.be/vYC5ZzJI2PU?si=S6h-co2sbx4i-Zl8"><img src="https://i.pinimg.com/1200x/c9/d8/62/c9d862522f974032d5fa595f509e5225.jpg" alt="">
+              <div>
+              <h3 class="text-[#DFD0B8] font-gaegu font-bold text-3xl tracking-wider px-3 py-2 justify-center text-center">Design</h3>
+              </div>
+            </div>
+            <p class="text-[#DFD0B8] font-gaegu text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste animi repellat perferendis minus ut beatae cum similique harum, facilis maiores.</p>
+          </div>
+        </a>
+          <div class="rounded-xl bg-[#393E46]/70 shadow-2xl p-6 justify-center">
+            <div class="flex items-center gap-3 mb-3 justify-center items-center">
+                <a href="https://youtu.be/vYC5ZzJI2PU?si=S6h-co2sbx4i-Zl8"><img src="https://i.pinimg.com/1200x/5e/c3/2a/5ec32a085d8965167c2029893b33e880.jpg" alt="">
+              <div>
+              <h3 class="text-[#DFD0B8] font-gaegu font-bold text-3xl tracking-wider px-3 py-2 justify-center text-center">Analyst</h3>
+              </div>
+            </div>
+            <p class="text-[#DFD0B8] font-gaegu text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste animi repellat perferendis minus ut beatae cum similique harum, facilis maiores.</p>
+          </div>
+        </a>
+          <div class="rounded-xl bg-[#393E46]/70 shadow-2xl p-6 justify-center">
+            <div class="flex items-center gap-3 mb-3 justify-center items-center">
+                <a href="https://youtu.be/vYC5ZzJI2PU?si=S6h-co2sbx4i-Zl8"><img src="https://i.pinimg.com/1200x/8b/21/d6/8b21d647d294c2bac4c2cf471895fb83.jpg" alt="">
+              <div>
+              <h3 class="text-[#DFD0B8] font-gaegu font-bold text-3xl tracking-wider px-3 py-2 justify-center text-center">Calculate</h3>
+              </div>
+            </div>
+            <p class="text-[#DFD0B8] font-gaegu text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste animi repellat perferendis minus ut beatae cum similique harum, facilis maiores.</p>
+          </div>
+        </a>
+
+        </div>
+     </section>
+
+
+
+    <section id="skills" class="bg-[#393E46] text-[#DFD0B8] font-gaegu py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold uppercase tracking-wide relative inline-block">
+        Our Skills
+        <span class="block w-30 h-1 bg-[#222831] mx-auto mt-2"></span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-2 gap-6">
+      <div class="bg-[#948979] rounded-lg flex items-center justify-center p-6 hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator" class="w-12 h-12">
+      </div>
+
+      <div class="bg-[#948979] rounded-lg flex items-center justify-center p-6 hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" class="w-12 h-12">
+      </div>
+
+      <div class="bg-[#948979] rounded-lg flex items-center justify-center p-6 hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="XD" class="w-12 h-12">
+      </div>
+
+      <div class="bg-[#948979] rounded-lg flex items-center justify-center p-6 hover:scale-105 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" class="w-12 h-12">
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testi" class="w-full bg-[#948979] py-16 font-gaegu">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-center uppercase text-xl font-bold text-[] mb-12 relative inline-block mx-auto">
+      testimonials
+      <span class="block w-30 h-1 bg-[#222831] mx-auto mt-2"></span>
+    </h2>
+
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-[#222831] rounded-lg p-6 shadow-lg hover:shadow-xl transition">
+        <div class="flex items-start gap-4">
+        
+          <div class="text-center border-r pr-4">
+            <p class="text-gray-300 text-sm">Dec</p>
+            <p class="text-2xl font-bold text-white">26</p>
+          </div>
+
+          <div>
+            <p class="text-[#948979] text-sm font-semibold">RAZ SMITH</p>
+            <h3 class="text-lg font-bold text-white">Design Review</h3>
+            <p class="text-gray-300 text-sm mt-2">All good, best choice</p>
+            <a href="#" class="text-[#948979] text-sm font-semibold mt-4 inline-block hover:underline">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#222831] rounded-lg p-6 shadow-lg hover:shadow-xl transition">
+        <div class="flex items-start gap-4">
+          <div class="text-center border-r pr-4">
+            <p class="text-gray-300 text-sm">Dec</p>
+            <p class="text-2xl font-bold text-white">29</p>
+          </div>
+          <div>
+            <p class="text-[#948979] text-sm font-semibold">NAV ALE</p>
+            <h3 class="text-lg font-bold text-white">Analystic Review</h3>
+            <p class="text-gray-300 text-sm mt-2">Fast and neat, organized well</p>
+            <a href="#" class="text-[#948979] text-sm font-semibold mt-4 inline-block hover:underline">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#222831] rounded-lg p-6 shadow-lg hover:shadow-xl transition">
+        <div class="flex items-start gap-4">
+          <div class="text-center border-r pr-4">
+            <p class="text-gray-300 text-sm">Dec</p>
+            <p class="text-2xl font-bold text-white">31</p>
+          </div>
+          <div>
+            <p class="text-[#948979] text-sm font-semibold">MONA VOUS</p>
+            <h3 class="text-lg font-bold text-white">Buildings Review</h3>
+            <p class="text-gray-300 text-sm mt-2">Perfect Manufacturer</p>
+            <a href="#" class="text-[#948979] text-sm font-semibold mt-4 inline-block hover:underline">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="w-full bg-[#DFD0B8] py-16 font-gaegu">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-[#222831] uppercase tracking-wide">
+      CONTACT US
+    </h2>
+    <div class="w-40 h-1 bg-[#222831] mx-auto my-2"></div>
+    <p class="text-[#222831] mb-8">CONTACT US FOR FURTHER INFORMATION</p>
+
+    <form class="bg-[#222831] rounded-lg p-8 shadow-lg space-y-6">
+      <div class="grid md:grid-cols-2 gap-6">
+        <input placeholder="NAME" type="text" class="w-full px-4 py-2 rounded-md bg-[#393E46] text-[#DFD0B8] placeholder-[#DFD0B8] focus:outline-none focus:ring-2 focus:ring-[#DFD0B8]">
+        <input placeholder="EMAIL" type="email" class="w-full px-4 py-2 rounded-md bg-[#393E46] text-[#DFD0B8] placeholder-[#DFD0B8] focus:outline-none focus:ring-2 focus:ring-[#DFD0B8]">
+      </div>
+      <textarea placeholder="MESSAGE" rows="5" class="w-full px-4 py-2 rounded-md bg-[#393E46] text-[#DFD0B8] placeholder-[#DFD0B8] focus:outline-none focus:ring-2"></textarea>
+      <button type="submit" class="bg-[#DFD0B8] hover:bg-[#948979] text-[#393E46] font-semibold px-6 py-2 rounded-md transition">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<section class="w-full bg-[#393E46] py-12 font-gaegu">
+  <div class="w-full mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+    
+    <h2 class="text-center text-3xl md:text-3xl font-semibold text-[#948979] tracking-wide mb-12">
+      FIND OUR LOCATION <br><span class="text-xl text-[#DFD0B8]">Our Office <br>Çınarlı, Ankara Cd. No:15, 35170 Konak/İzmir, Türkiye</span>
+    </h2>
+    
+    <div class="items-center">
+     <div>
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1599849.6853421307!2d24.741039656250003!3d38.448249699999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b962a5e793ba55%3A0x42e7ac71bc8447f!2sMistral%20Office%20Tower!5e0!3m2!1sen!2sid!4v1756985221451!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-lg"></iframe>
+      </div>
+      </div>
+  </div>
+
+  <div class="mt-10 text-center text-[#948979] text-sm border-t border-gray-700 pt-4">
+    Copyright © 2025 — All Rights Reserved by <span class="text-[#DFD0B8] font-semibold">KaleZi</span>
+  </div>
+</section>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      AOS.init({
+        duration: reduceMotion ? 0 : 600,
+        once: true,
+      });
+
+      const btn = document.getElementById("hamburger");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const menu = document.getElementById("main-menu");
+      const panel = document.getElementById("mobile-panel");
+
+      btn?.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+        panel.classList.toggle("hidden");
+      });
+
+      panel?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+          panel.classList.add("hidden");
+        });
+      });
+    </script>
+
+</body>
+</html>
